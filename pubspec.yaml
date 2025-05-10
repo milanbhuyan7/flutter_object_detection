@@ -1,0 +1,26 @@
+name: flutter_object_detection
+description: A Flutter app that performs real-time object detection using native ML Kit APIs.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.10.5+2
+  cupertino_icons: ^1.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - android/app/src/main/assets/models/object_labeler.tflite
+    - ios/Runner/Resources/models/object_labeler.tflite
